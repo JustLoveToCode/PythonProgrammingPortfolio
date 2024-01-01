@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 def km_to_miles(km):
     return km / 1.6
 
-
+# Creating the Graphical User Interface(GUI):
 label = sg.Text("Kilometers: ")
 input_box = sg.InputText(tooltip="Enter todo", key="kms")
 miles_button = sg.Button("Convert")
