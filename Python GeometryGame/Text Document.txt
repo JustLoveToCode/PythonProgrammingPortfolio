@@ -1,0 +1,8 @@
+Title: Geometry Game:
+Description: This Geometry Game is about creating the Rectangle and also guessing whether the point is
+inside the Rectangle.
+Python Library used: Randint and the Turtle Library
+
+Title: TurtleDrawing:
+This is using the Turtle Library to draw the random shapes for
+the turtle.
