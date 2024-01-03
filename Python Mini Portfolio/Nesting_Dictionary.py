@@ -1,39 +1,12 @@
-# Nesting Dictionary
-
-capitals = {
-    "France": "Paris",
-    "Germany": "Berlin",
+order = {
+    "starter": {1: "Salad", 2: "Soup"},
+    "main": {1: ["Burger", "Fries"], 2: ["Steak"]},
+    "dessert": {1: ["Ice Cream"], 2: []},
 }
 
-# Nesting a List in the Dictionary:
-
-travel_log = {
-    "France": ["Paris", "Lille", "Dijon"],
-    "Germany": ["Berlin", "Hamburg", "Stuttgart"]
-}
-
-# Nesting the Dictionary Inside the List:
-travel_log_1 = [
-    {"Country": 'France',
-     "Cities_Visited": ["Paris", "Lille", "Dijon"],
-     "Total_Visited": "12"},
-
-    {"Country": "Germany",
-     "Cities_Visited": ["Berlin", "Hamburg", "Stuttgart"],
-     "Total_Visited": "5"},
-]
-
-print(travel_log_1[0])
-print(travel_log_1[0]["Country"])
-print(travel_log_1[0]["Cities_Visited"])
-print(travel_log_1[0]["Cities_Visited"][0])
-print(travel_log_1[0]["Cities_Visited"][1])
-print(travel_log_1[0]["Cities_Visited"][2])
-print(travel_log_1[0]["Total_Visited"])
-print(travel_log_1[1])
-print(travel_log_1[1]["Cities_Visited"])
-print(travel_log_1[1]["Cities_Visited"][0])
-print(travel_log_1[1]["Cities_Visited"][1])
-print(travel_log_1[1]["Cities_Visited"][2])
-print(travel_log_1[1]["Total_Visited"])
-
+print(order["starter"][1])
+print(order["starter"][2])
+print(order["main"][1][0])
+print(order["main"][1][1])
+print(order["dessert"][1])
+print(order["dessert"][2])
